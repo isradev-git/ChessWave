@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Israel (NetWave) Zamora Tejero">
+    <title>NetWave Chess</title>
+    <link rel="shortcut icon" href="./img/favicon/favicon.png" type="image/png">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/chessboard-1.0.0.min.css">
+    <script src="./functionality.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1>NetWave Chess</h1>
+        <div class="board" id="tablero"></div>
+        <div class="buttons">
+            <button class="play-again">Jugar de nuevo</button>
+            <button class="set-pos">Fijar posición</button>
+            <button class="flip-board">Mover tablero</button>
+        </div>
+        <div id="mover-historial" class="move-history"></div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="js/chessboard-1.0.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chess.js/0.10.3/chess.min.js"></script>
+</body>
+</html>

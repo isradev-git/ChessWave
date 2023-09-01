@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap');
+
+*{
+    font-family: 'Rajdhani', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    --fondo: #ffead1;
+    --blanco: #fff;
+    --negro: #000;
+    --oscuro: #a5845c;
+    --oscuro-hover: #a5845ce3;
+}
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--fondo);
+}
+.container {
+    background-color: var(--blanco);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    scale: .8;
+}
+h1 {
+    text-align: center;
+    font-weight: 500;
+}
+.board {
+    width: 400px;
+    margin: 20px auto;
+}
+.buttons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+button {
+    color: var(--blanco);
+    background-color: var(--oscuro);
+    border: none;
+    width: 120px;
+    height: 40px;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    font-weight: 800;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+button:hover {
+    background-color: var(--oscuro-hover);
+}
+.move-history {
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    height: 100px;
+    width: auto;
+    overflow-y: scroll;
+    background-color: #f3f3f3;
+}
